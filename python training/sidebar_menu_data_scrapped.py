@@ -9,14 +9,22 @@ def json_from_html_using_bs4(base_url):
     soup = BeautifulSoup(page.text, "html.parser")
 
     faqs = soup.find_all(
-        'h2', attrs={'class':
-            'lb-txt-bold lb-txt-none lb-txt-24 lb-h2 lb-title'})
-    print(faqs)
+        'a', attrs={'class':
+            'lb-txt-bold lb-txt-none lb-txt-16 lb-txt'})
+    # print(faqs)
 
     for faq in faqs:
-        title = faq.find('h2')['id']
+        print(faq.getText())
+        
+    #     res.append(title)
+    #     div += 1
+    # return res
 
-        link = faq.find('a')['href']
+    data = '''faq'''
+
+    faqs.append(data)
+    # title += 1
+    return res
 
 if __name__=="__main__":
 
@@ -24,8 +32,8 @@ if __name__=="__main__":
 
     res = json_from_html_using_bs4(base_url)
 
-    with open('faqs.json', encoding='latin-1') as f:
-        json.dump(res,f,indent=8)
+    with open(res,'sidebar_menu_data_scrapped.json','w') as sidebarMenuJSON:
+        json.dump(sidebarMenuJSON, ensure_ascii=False)
     print("Created JSON file")
 
 # base_url = "https://aws.amazon.com/ec2/faqs/"
@@ -39,5 +47,3 @@ if __name__=="__main__":
 
 # paras = soup.find('h2')
 # print (paras.prettify())
-
-
