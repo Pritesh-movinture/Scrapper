@@ -1,0 +1,208 @@
+[
+        [
+                {
+                        "question": "Q: What is Amazon Elastic Compute Cloud (Amazon EC2)?"
+                },
+                {
+                        "question": "Q: How do I load and store my systems with Amazon EC2?"
+                },
+                {
+                        "question": "If you need more instances, complete the Amazon EC2 limit increase request form with your use case, and your limit increase will be considered. Limit increases are tied to the region they were requested for."
+                },
+                {
+                        "question": "Q: What is changing?"
+                },
+                {
+                        "question": "Q: How many On-Demand instances can I run in Amazon EC2?"
+                },
+                {
+                        "question": "Q: Are these On-Demand Instance vCPU-based limits regional?"
+                },
+                {
+                        "question": "Q: What is changing?"
+                },
+                {
+                        "question": "Q: What does your Amazon EC2 Service Level Agreement guarantee?"
+                },
+                {
+                        "question": "Q: What are Accelerated Computing instances?"
+                },
+                {
+                        "question": "Q: When should I choose Elastic Inference (EI) for inference vs Amazon EC2 Inf1 instances?"
+                },
+                {
+                        "question": "Q: How do I use the Trainium chips in Trn1 instances?"
+                },
+                {
+                        "question": "Q: How are Burstable Performance Instances different?"
+                },
+                {
+                        "question": "* For the t2.medium, single threaded applications can use 40% of 1 core, or if needed, multithreaded applications can use 20% each of 2 cores."
+                },
+                {
+                        "question": "Q: What are Amazon EC2 T4g instances? "
+                },
+                {
+                        "question": "Q: How can customers get access to the T4g free trial? "
+                },
+                {
+                        "question": "Q: When should I use Compute Optimized instances?"
+                },
+                {
+                        "question": "Q: What are Amazon EC2 C6g instances?"
+                },
+                {
+                        "question": "Q: Can I launch C4 instances as Amazon EBS-optimized instances?"
+                },
+                {
+                        "question": "Q: Which instances are available within the high performance computing (HPC) instances category? "
+                },
+                {
+                        "question": "Q: What are Amazon EC2 M6g instances?"
+                },
+                {
+                        "question": "Q: What are Amazon EC2 A1 instances?"
+                },
+                {
+                        "question": "Q: What are EC2 High Memory instances?"
+                },
+                {
+                        "question": "Q: When should I use memory-optimized instances?"
+                },
+                {
+                        "question": "Q: What are Amazon EC2 R6g instances?"
+                },
+                {
+                        "question": "Q: What are Amazon EC2 X2gd instances?"
+                },
+                {
+                        "question": "Q: Why don’t I see M1, C1, CC2 and HS1 instances on the pricing pages any more?"
+                },
+                {
+                        "question": "Q: What is a Dense-storage Instance?"
+                },
+                {
+                        "question": "Q: What happens to my data when a system terminates?"
+                },
+                {
+                        "question": "Q: How do I access a file system from an Amazon EC2 instance?"
+                },
+                {
+                        "question": "Q: Is data stored on Amazon EC2 NVMe instance storage encrypted? "
+                },
+                {
+                        "question": "Q: What is ENA Express?"
+                },
+                {
+                        "question": "Q: Why should I use EFA?"
+                },
+                {
+                        "question": "Q: What networking capabilities are included in this feature?"
+                },
+                {
+                        "question": "Q: What load balancing options does the Elastic Load Balancing service offer?"
+                },
+                {
+                        "question": "Q: Why am I limited to 5 Elastic IP addresses per region?"
+                },
+                {
+                        "question": "Q: How do I prevent other people from viewing my systems?"
+                },
+                {
+                        "question": "Q: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates?"
+                },
+                {
+                        "question": "Q: Can I automatically scale Amazon EC2 Auto Scaling Groups?"
+                },
+                {
+                        "question": "Q: Why should I hibernate an instance?"
+                },
+                {
+                        "question": "Q: What is VM Import/Export?"
+                },
+                {
+                        "question": "Q: What operating systems are supported?"
+                },
+                {
+                        "question": "Q: How will I be charged and billed for my use of Amazon EC2?"
+                },
+                {
+                        "question": "Q: What is a Convertible RI?"
+                },
+                {
+                        "question": "Q: What is Amazon EC2 Fleet?"
+                },
+                {
+                        "question": "On-Demand Capacity Reservation is an EC2 offering that lets you create and manage reserved capacity on Amazon EC2. You can create a Capacity Reservation by choosing an Availability Zone and quantity (number of instances) along with other instance specifications such as instance type and tenancy. Once created, the EC2 capacity is held for you regardless of whether you run the instances or not."
+                },
+                {
+                        "question": "Q: What is a Reserved Instance?"
+                },
+                {
+                        "question": "Q: Can I change my RI during its term?"
+                },
+                {
+                        "question": "Q: Can you help me understand how volume discounts are applied to my RI purchases?"
+                },
+                {
+                        "question": "Q: How are volume discounts calculated if I use Consolidated Billing?"
+                },
+                {
+                        "question": "Q: What is the Reserved Instance Marketplace?"
+                },
+                {
+                        "question": "Q: What is Savings Plans?"
+                },
+                {
+                        "question": "Q. What is a Spot Instance?"
+                },
+                {
+                        "question": "Q. How do I use this service?"
+                },
+                {
+                        "question": "Q: How isolated are Availability Zones from one another?"
+                },
+                {
+                        "question": "Q. What is a Cluster Compute Instance?"
+                },
+                {
+                        "question": "Q: What CPU options are available on EC2 instances?"
+                },
+                {
+                        "question": "Q. How much compute power do Micro instances provide?"
+                },
+                {
+                        "question": "Q. What is the Nitro Hypervisor?"
+                },
+                {
+                        "question": "Q: What is Optimize CPUs?"
+                },
+                {
+                        "question": "Q. How am I billed for my use of Amazon EC2 running IBM?"
+                },
+                {
+                        "question": "Q. Can I use my existing Windows Server license with EC2?"
+                },
+                {
+                        "question": "Q: What are Amazon EC2 Mac instances?"
+                },
+                {
+                        "question": "Q: What pricing models are available for EC2 Mac instances?"
+                },
+                {
+                        "question": "Q: Can you update the EFI NVRAM variables on an EC2 Mac instance?"
+                },
+                {
+                        "question": "Q: What macOS-based Amazon Machine Images (AMIs) are available for EC2 Mac instances?"
+                },
+                {
+                        "question": "Q: How do you connect to an EC2 Mac instance over SSH?"
+                },
+                {
+                        "question": "Q: How many Amazon Elastic Block Store (Amazon EBS) volumes and Elastic Network Interfaces (ENIs) are supported by EC2 Mac instances?"
+                },
+                {
+                        "question": "Q. What is Nitro System Support for Older Generation instances?"
+                }
+        ]
+]
