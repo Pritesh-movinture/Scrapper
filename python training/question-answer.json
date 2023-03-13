@@ -1,208 +1,412 @@
 [
         [
                 {
-                        "question": "Q: What is Amazon Elastic Compute Cloud (Amazon EC2)?"
+                        "question": "\nQ: What is Amazon Elastic Compute Cloud (Amazon EC2)"
                 },
                 {
-                        "question": "Q: How do I load and store my systems with Amazon EC2?"
+                        "answer": "\nAmazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud. It is designed to make web-scale computing easier for developers.\nQ: What can I do with Amazon EC2"
                 },
                 {
-                        "question": "If you need more instances, complete the Amazon EC2 limit increase request form with your use case, and your limit increase will be considered. Limit increases are tied to the region they were requested for."
+                        "question": "\nQ: How do I load and store my systems with Amazon EC2"
                 },
                 {
-                        "question": "Q: What is changing?"
+                        "answer": "\nAmazon EC2 allows you to set up and configure everything about your instances from your operating system up to your applications. An Amazon Machine Image (AMI) is simply a packaged-up environment that includes all the necessary bits to set up and boot your instance. Your AMIs are your unit of deployment. You might have just one AMI or you might compose your system out of several building block AMIs (e.g., webservers, appservers, and databases). Amazon EC2 provides a number of tools to make creating an AMI easy. Once you create a custom AMI, you will need to bundle it. If you are bundling an image with a root device backed by Amazon EBS, you can simply use the bundle command in the AWS Management Console. If you are bundling an image with a boot partition on the instance store, then you will need to use the AMI Tools to upload it to Amazon S3. Amazon EC2 uses Amazon EBS and Amazon S3 to provide reliable, scalable storage of your AMIs so that we can boot them when you ask us to do so.\nOr, if you want, you don’t have to set up your own AMI from scratch. You can choose from a number of globally available AMIs that provide useful instances. For example, if you just want a simple Linux server, you can choose one of the standard Linux distribution AMIs.\nQ: How do I access my systems"
                 },
                 {
-                        "question": "Q: How many On-Demand instances can I run in Amazon EC2?"
+                        "question": "\nIf you need more instances, complete the Amazon EC2 limit increase request form with your use case, and your limit increase will be considered. Limit increases are tied to the region they were requested for.\nQ: Are there any limitations in sending email from Amazon EC2 instances"
                 },
                 {
-                        "question": "Q: Are these On-Demand Instance vCPU-based limits regional?"
+                        "answer": "\nYes. In order to maintain the quality of Amazon EC2 addresses for sending email, we enforce default limits on the amount of email that can be sent from EC2 accounts. If you wish to send larger amounts of email from EC2, you can apply to have these limits removed from your account by filling out this form.\nQ: How quickly can I scale my capacity both up and down"
                 },
                 {
-                        "question": "Q: What is changing?"
+                        "question": "\nQ: What is changing"
                 },
                 {
-                        "question": "Q: What does your Amazon EC2 Service Level Agreement guarantee?"
+                        "answer": "\nAmazon EC2 is transitioning On-Demand Instance limits from the current instance count-based limits to the new vCPU-based limits to simplify the limit management experience for AWS customers. Usage toward the vCPU-based limit is measured in terms of number of vCPUs (virtual central processing units) for the Amazon EC2 Instance Types to launch any combination of instance types that meet your application needs.\nQ: What are vCPU-based limits"
                 },
                 {
-                        "question": "Q: What are Accelerated Computing instances?"
+                        "question": "\nQ: How many On-Demand instances can I run in Amazon EC2"
                 },
                 {
-                        "question": "Q: When should I choose Elastic Inference (EI) for inference vs Amazon EC2 Inf1 instances?"
+                        "answer": "\nThere are five vCPU-based instance limits; each defines the amount of capacity you can use of a given instance family. All usage of instances in a given family, regardless of generation, size, or configuration variant (e.g. disk, processor type), will accrue towards the family’s total vCPU limit, listed in the table below. New AWS accounts may start with limits that are lower than the limits described here. \n"
                 },
                 {
-                        "question": "Q: How do I use the Trainium chips in Trn1 instances?"
+                        "question": "\nQ: Are these On-Demand Instance vCPU-based limits regional"
                 },
                 {
-                        "question": "Q: How are Burstable Performance Instances different?"
+                        "answer": "\nYes, the On-Demand Instance limits for an AWS account are set on a per-region basis.\nQ: Will these limits change over time"
                 },
                 {
-                        "question": "* For the t2.medium, single threaded applications can use 40% of 1 core, or if needed, multithreaded applications can use 20% each of 2 cores."
+                        "question": "\nQ: What is changing"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 T4g instances? "
+                        "answer": "\nStarting Jan-27 2020, Amazon Elastic Compute Cloud (EC2) will begin rolling out a change to restrict email traffic over port 25 by default to protect customers and other recipients from spam and email abuse. Port 25 is typically used as the default SMTP port to send emails. AWS accounts that have requested and had Port 25 throttles removed in the past will not be impacted by this change.\nQ: I have a valid use-case for sending emails to port 25 from EC2. How can I have these port 25 restrictions removed"
                 },
                 {
-                        "question": "Q: How can customers get access to the T4g free trial? "
+                        "question": "\nQ: What does your Amazon EC2 Service Level Agreement guarantee"
                 },
                 {
-                        "question": "Q: When should I use Compute Optimized instances?"
+                        "answer": "\nOur SLA guarantees a Monthly Uptime Percentage of at least 99.99% for Amazon EC2 and Amazon EBS within a Region.\nQ: How do I know if I qualify for an SLA Service Credit"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 C6g instances?"
+                        "question": "\nQ: What are Accelerated Computing instances"
                 },
                 {
-                        "question": "Q: Can I launch C4 instances as Amazon EBS-optimized instances?"
+                        "answer": "\nAccelerated Computing instance family is a family of instances that use hardware accelerators, or co-processors, to perform some functions, such as floating-point number calculation and graphics processing, more efficiently than is possible in software running on CPUs. Amazon EC2 provides three types of Accelerated Computing instances – GPU compute instances for general-purpose computing, GPU graphics instances for graphics intensive applications, and FPGA programmable hardware compute instances for advanced scientific workloads.\nQ: When should I use GPU Graphics and Compute instances"
                 },
                 {
-                        "question": "Q: Which instances are available within the high performance computing (HPC) instances category? "
+                        "question": "\nQ: When should I choose Elastic Inference (EI) for inference vs Amazon EC2 Inf1 instances"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 M6g instances?"
+                        "answer": "\nThere are two cases where developers would choose EI over Inf1 instances: (1) if you need different CPU and memory sizes than what Inf1 offers, then you can use EI to attach acceleration to the EC2 instance with the right mix of CPU and memory for your application (2) if your performance requirements are significantly lower than what the smallest Inf1 instance provides, then using EI could be a more cost effective choice. For example, if you only need 5 TOPS, enough for processing up to 6 concurrent video streams, then using the smallest slice of EI with a C5.large instance could be up to 50% cheaper than using the smallest size of an Inf1 instance.\nQ: What ML models types and operators are supported by EC2 Inf1 instances using the Inferentia chip"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 A1 instances?"
+                        "question": "\nQ: How do I use the Trainium chips in Trn1 instances"
                 },
                 {
-                        "question": "Q: What are EC2 High Memory instances?"
+                        "answer": "\nThe Trainium software stack, AWS Neuron SDK, integrates with leading ML frameworks, such as PyTorch and TensorFlow, so you can get started with minimal code changes. To get started quickly, you can use AWS Deep Learning AMIs and AWS Deep Learning Containers, which come preconfigured with AWS Neuron. If you are using containerized applications, you can deploy AWS Neuron by using Amazon Elastic Container Service (Amazon ECS), Amazon Elastic Kubernetes Service (Amazon EKS), or your preferred native container engine. AWS Neuron also supports Amazon SageMaker, which you can use to build, train, and deploy machine learning models. \nQ: Where can I deploy deep learning models trained on Trn1"
                 },
                 {
-                        "question": "Q: When should I use memory-optimized instances?"
+                        "question": "\nQ: How are Burstable Performance Instances different"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 R6g instances?"
+                        "answer": "\nAmazon EC2 allows you to choose between Fixed Performance Instances (e.g. C, M and R instance families) and Burstable Performance Instances (e.g. T2). Burstable Performance Instances provide a baseline level of CPU performance with the ability to burst above the baseline.\nT2 instances’ baseline performance and ability to burst are governed by CPU Credits. Each T2 instance receives CPU Credits continuously, the rate of which depends on the instance size. T2 instances accrue CPU Credits when they are idle, and consume CPU credits when they are active. A CPU Credit provides the performance of a full CPU core for one minute. \n"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 X2gd instances?"
+                        "question": "\n* For the t2.medium, single threaded applications can use 40% of 1 core, or if needed, multithreaded applications can use 20% each of 2 cores.\n**For the t2.large, single threaded applications can use 60% of 1 core, or if needed, multithreaded applications can use 30% each of 2 cores.\n*** For the t2.xlarge, single threaded applications can use 90% of 1 core, or if needed, multithreaded applications can use 45% each of 2 cores or 22.5% of all 4 cores.\n**** For the t2.2xlarge, single threaded applications can use all of 1 core, or if needed, multithreaded applications can use 67.5% each of 2 cores or 16.875% of all 8 cores.\nQ. How do I choose the right Amazon Machine Image (AMI) for my T2 instances"
                 },
                 {
-                        "question": "Q: Why don’t I see M1, C1, CC2 and HS1 instances on the pricing pages any more?"
+                        "answer": "\nYou will want to verify that the minimum memory requirements of your operating system and applications are within the memory allocated for each T2 instance size (e.g. 512 MiB for t2.nano). Operating systems with Graphical User Interfaces (GUI) that consume significant memory and CPU, for example Microsoft Windows, might need a t2.micro or larger instance size for many use cases. You can find AMIs suitable for the t2.nano instance types on AWS Marketplace. Windows customers who do not need the GUI can use the Microsoft Windows Server 2012 R2 Core AMI.\nQ: When should I choose a Burstable Performance Instance, such as T2"
                 },
                 {
-                        "question": "Q: What is a Dense-storage Instance?"
+                        "question": "\nQ: What are Amazon EC2 T4g instances"
                 },
                 {
-                        "question": "Q: What happens to my data when a system terminates?"
+                        "answer": " \nAmazon EC2 T4g instances are the next-generation of general purpose burstable instances powered by Arm-based AWS Graviton2 processors. T4g instances deliver up to 40% better price performance over T3 instances. They are built on the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.\nQ: What are some of the ideal use cases for T4g instances"
                 },
                 {
-                        "question": "Q: How do I access a file system from an Amazon EC2 instance?"
+                        "question": "\nQ: How can customers get access to the T4g free trial"
                 },
                 {
-                        "question": "Q: Is data stored on Amazon EC2 NVMe instance storage encrypted? "
+                        "answer": " \nUntil December 31, 2023, all AWS customers will be enrolled automatically in the T4g free trial as detailed in the AWS Free Tier. During the free-trial period, customers who run a t4g.small instance will automatically get 750 free hours per month deducted from their bill during each month. The 750 hours are calculated in aggregate across all Regions in which the t4g.small instances are used. Customers must pay for surplus CPU credits when they exceed the instances allocated credits during the 750 free hours of the T4g free trial program. For more information about how CPU credits work, see Key concepts and definitions for burstable performance instances in the Amazon EC2 User Guide for Linux Instances.\nQ: Who is eligible for the T4g free trial"
                 },
                 {
-                        "question": "Q: What is ENA Express?"
+                        "question": "\nQ: When should I use Compute Optimized instances"
                 },
                 {
-                        "question": "Q: Why should I use EFA?"
+                        "answer": "\nCompute Optimized instances are designed for applications that benefit from high compute power. These applications include compute-intensive applications like high-performance web servers, high-performance computing (HPC), scientific modelling, distributed analytics and machine learning inference.\nQ: What are Amazon EC2 C7g instances"
                 },
                 {
-                        "question": "Q: What networking capabilities are included in this feature?"
+                        "question": "\nQ: What are Amazon EC2 C6g instances"
                 },
                 {
-                        "question": "Q: What load balancing options does the Elastic Load Balancing service offer?"
+                        "answer": "\nAmazon EC2 C6g instances are the next-generation of compute-optimized instances powered by Arm-based AWS Graviton2 Processors. C6g instances deliver up to 40% better price performance over C5 instances. They are built on the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.\nQ: What are some of the ideal use cases for C6g instances"
                 },
                 {
-                        "question": "Q: Why am I limited to 5 Elastic IP addresses per region?"
+                        "question": "\nQ: Can I launch C4 instances as Amazon EBS-optimized instances"
                 },
                 {
-                        "question": "Q: How do I prevent other people from viewing my systems?"
+                        "answer": "\nEach C4 instance type is EBS-optimized by default. C4 instances 500 Mbps to 4,000 Mbps to EBS above and beyond the general-purpose network throughput provided to the instance. Since this feature is always enabled on C4 instances, launching a C4 instance explicitly as EBS-optimized will not affect the instance's behavior.\nQ: How can I use the processor state control feature available on the c4.8xlarge instance"
                 },
                 {
-                        "question": "Q: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates?"
+                        "question": "\nQ: Which instances are available within the high performance computing (HPC) instances category"
                 },
                 {
-                        "question": "Q: Can I automatically scale Amazon EC2 Auto Scaling Groups?"
+                        "answer": " \nHpc6a instances: Hpc6a instances are powered by 96 cores of third generation AMD EPYC processors with an all-core turbo frequency of 3.6 GHz and 384 GiB RAM. Hpc6a instances offer 100 Gbps Elastic Fabric Adapter (EFA) networking enabled for high throughput inter-node communications to help you run your HPC workloads at scale. Hpc6a instances deliver up to 65% better price performance over comparable, compute-optimized x-86 based instances.\nHpc6id instances: Hpc6id instances are powered by 64 cores of Intel 3rd Generation Xeon Scalable processors that run at frequencies up to 3.5 GHz for increased efficiency. These instances are designed to improve performance for memory-bound workloads by offering 5 GB/s memory bandwidth per vCPU. Hpc6id instances offer 200 Gbps Elastic Fabric Adapter (EFA) networking for high-throughput inter-node communications to help you run your HPC workloads at scale.\nQ: What is the Regional availability of the Hpc6a instances"
                 },
                 {
-                        "question": "Q: Why should I hibernate an instance?"
+                        "question": "\nQ: What are Amazon EC2 M6g instances"
                 },
                 {
-                        "question": "Q: What is VM Import/Export?"
+                        "answer": "\nAmazon EC2 M6g instances are the next-generation of general-purpose instances powered by Arm-based AWS Graviton2 Processors. M6g instances deliver up to 40% better price/performance over M5 instances. They are built on the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.\nQ: What are the specifications of the new AWS Graviton2 Processors"
                 },
                 {
-                        "question": "Q: What operating systems are supported?"
+                        "question": "\nQ: What are Amazon EC2 A1 instances"
                 },
                 {
-                        "question": "Q: How will I be charged and billed for my use of Amazon EC2?"
+                        "answer": "\nAmazon EC2 A1 instances are general purpose instances powered by the first-generation AWS Graviton Processors that are custom designed by AWS. \nQ: What are the specifications of the first-generation AWS Graviton Processors"
                 },
                 {
-                        "question": "Q: What is a Convertible RI?"
+                        "question": "\nQ: What are EC2 High Memory instances"
                 },
                 {
-                        "question": "Q: What is Amazon EC2 Fleet?"
+                        "answer": "\nAmazon EC2 High Memory instances offer 3, 6, 9, 12, 18, or 24 TiB of memory in a single instance. These instances are designed to run large in-memory databases, including production installations of SAP HANA, in the cloud. \nEC2 High Memory instances with 3, 6, 9, and 12 TiB of memory are powered by an 8-socket platform with Intel® Xeon® Platinum 8176M (Skylake) processors. EC2 High Memory instances with 18 and 24 TiB of memory are the first Amazon EC2 instances powered by an 8-socket platform with 2nd Generation Intel® Xeon® Scalable (Cascade Lake) processors that are optimized for mission-critical enterprise workloads. EC2 High Memory instances deliver high networking throughput and low-latency with up to 100 Gbps of aggregate network bandwidth using Amazon Elastic Network Adapter (ENA)-based Enhanced Networking. EC2 High Memory instances are EBS-Optimized by default, and support encrypted and unencrypted EBS volumes. \nQ: Are High Memory instances certified by SAP to run SAP HANA workloads"
                 },
                 {
-                        "question": "On-Demand Capacity Reservation is an EC2 offering that lets you create and manage reserved capacity on Amazon EC2. You can create a Capacity Reservation by choosing an Availability Zone and quantity (number of instances) along with other instance specifications such as instance type and tenancy. Once created, the EC2 capacity is held for you regardless of whether you run the instances or not."
+                        "question": "\nQ: When should I use memory-optimized instances"
                 },
                 {
-                        "question": "Q: What is a Reserved Instance?"
+                        "answer": "\nMemory-optimized instances offer large memory size for memory intensive applications including in-memory applications, in-memory databases, in-memory analytics solutions, High Performance Computing (HPC), scientific computing, and other memory-intensive applications. \n"
                 },
                 {
-                        "question": "Q: Can I change my RI during its term?"
+                        "question": "\nQ: What are Amazon EC2 R6g instances"
                 },
                 {
-                        "question": "Q: Can you help me understand how volume discounts are applied to my RI purchases?"
+                        "answer": "\nAmazon EC2 R6g instances are the next-generation of memory-optimized instances powered by Arm-based AWS Graviton2 Processors. R6g instances deliver up to 40% better price performance over R5 instances. They are built on the AWS Nitro System, a combination of dedicated hardware and Nitro hypervisor.\nQ: What are some of the ideal use cases for R6g instances"
                 },
                 {
-                        "question": "Q: How are volume discounts calculated if I use Consolidated Billing?"
+                        "question": "\nQ: What are Amazon EC2 X2gd instances"
                 },
                 {
-                        "question": "Q: What is the Reserved Instance Marketplace?"
+                        "answer": "\nAmazon EC2 X2gd instances are the next generation of memory-optimized instances powered by AWS-designed Arm-based AWS Graviton2 processors. X2gd instances deliver up to 55% better price performance compared to x86-based X1 instances and offer the lowest cost per GiB of memory in Amazon EC2. They are the first in the X family of instances to be built on the AWS Nitro System, which is a combination of dedicated hardware and Nitro hypervisor.\nQ: What workloads are suited for X2gd instances"
                 },
                 {
-                        "question": "Q: What is Savings Plans?"
+                        "question": "\nQ: Why don’t I see M1, C1, CC2 and HS1 instances on the pricing pages any more"
                 },
                 {
-                        "question": "Q. What is a Spot Instance?"
+                        "answer": "\nThese have been moved to the Previous Generation Instance page.\nQ: Are these Previous Generation instances still being supported"
                 },
                 {
-                        "question": "Q. How do I use this service?"
+                        "question": "\nQ: What is a Dense-storage Instance"
                 },
                 {
-                        "question": "Q: How isolated are Availability Zones from one another?"
+                        "answer": "\nDense-storage instances are designed for workloads that require high sequential read and write access to very large data sets, such as Hadoop distributed computing, massively parallel processing data warehousing, and log processing applications. The Dense-storage instances offer the best price/GB-storage and price/disk-throughput across other EC2 instances.\nQ: How do dense-storage instances compare to High I/O instances"
                 },
                 {
-                        "question": "Q. What is a Cluster Compute Instance?"
+                        "question": "\nQ: What happens to my data when a system terminates"
                 },
                 {
-                        "question": "Q: What CPU options are available on EC2 instances?"
+                        "answer": "\nThe data stored on a local instance store will persist only as long as that instance is alive. However, data that is stored on an Amazon EBS volume will persist independently of the life of the instance. Therefore, we recommend that you use the local instance store for temporary data and, for data requiring a higher level of durability, we recommend using Amazon EBS volumes or backing up the data to Amazon S3. If you are using an Amazon EBS volume as a root partition, you will need to set the Delete On Terminate flag to \"N\" if you want your Amazon EBS volume to persist outside the life of the instance.\nQ: What kind of performance can I expect from Amazon EBS volumes"
                 },
                 {
-                        "question": "Q. How much compute power do Micro instances provide?"
+                        "question": "\nQ: How do I access a file system from an Amazon EC2 instance"
                 },
                 {
-                        "question": "Q. What is the Nitro Hypervisor?"
+                        "answer": "\nTo access your file system, you mount the file system on an Amazon EC2 Linux-based instance using the standard Linux mount command and the file system’s DNS name. Once you’ve mounted, you can work with the files and directories in your file system just like you would with a local file system.\nAmazon EFS uses the NFSv4.1 protocol. For a step-by-step example of how to access a file system from an Amazon EC2 instance, please see the Amazon EFS Getting Started guide.\nQ: What Amazon EC2 instance types and AMIs work with Amazon EFS"
                 },
                 {
-                        "question": "Q: What is Optimize CPUs?"
+                        "question": "\nQ: Is data stored on Amazon EC2 NVMe instance storage encrypted"
                 },
                 {
-                        "question": "Q. How am I billed for my use of Amazon EC2 running IBM?"
+                        "answer": " \nYes, all data is encrypted in an AWS Nitro hardware module prior to being written on the locally attached SSDs offered via NVMe instance storage.\nQ: What encryption algorithm is used to encrypt Amazon EC2 NVMe instance storage"
                 },
                 {
-                        "question": "Q. Can I use my existing Windows Server license with EC2?"
+                        "question": "\nQ: What is ENA Express"
                 },
                 {
-                        "question": "Q: What are Amazon EC2 Mac instances?"
+                        "answer": "\nENA Express is an enhancement on the Elastic Network Adapter that brings the Scalable Reliable Datagram (SRD) protocol to traditional TCP and UDP networking. Transparent to the application, ENA Express improves single flow bandwidths and reduces tail latencies in throughput intensive workloads.  Q: How does ENA Express work"
                 },
                 {
-                        "question": "Q: What pricing models are available for EC2 Mac instances?"
+                        "question": "\nQ: Why should I use EFA"
                 },
                 {
-                        "question": "Q: Can you update the EFI NVRAM variables on an EC2 Mac instance?"
+                        "answer": "\nEFA brings the scalability, flexibility, and elasticity of cloud to tightly-coupled HPC applications. With EFA, tightly-coupled HPC applications have access to lower and more consistent latency and higher throughput than traditional TCP channels, enabling them to scale better. EFA support can be enabled dynamically, on-demand on any supported EC2 instance without pre-reservation, giving you the flexibility to respond to changing business/workload priorities.\nQ: What types of applications can benefit from using EFA"
                 },
                 {
-                        "question": "Q: What macOS-based Amazon Machine Images (AMIs) are available for EC2 Mac instances?"
+                        "question": "\nQ: What networking capabilities are included in this feature"
                 },
                 {
-                        "question": "Q: How do you connect to an EC2 Mac instance over SSH?"
+                        "answer": "\nWe currently support enhanced networking capabilities using SR-IOV (Single Root I/O Virtualization). SR-IOV is a method of device virtualization that provides higher I/O performance and lower CPU utilization compared to traditional implementations. For supported Amazon EC2 instances, this feature provides higher packet per second (PPS) performance, lower inter-instance latencies, and very low network jitter.\nQ: Why should I use Enhanced Networking"
                 },
                 {
-                        "question": "Q: How many Amazon Elastic Block Store (Amazon EBS) volumes and Elastic Network Interfaces (ENIs) are supported by EC2 Mac instances?"
+                        "question": "\nQ: What load balancing options does the Elastic Load Balancing service offer"
                 },
                 {
-                        "question": "Q. What is Nitro System Support for Older Generation instances?"
+                        "answer": "\nElastic Load Balancing offers two types of load balancers that both feature high availability, automatic scaling, and robust security. These include the Classic Load Balancer that routes traffic based on either application or network level information, and the Application Load Balancer that routes traffic based on advanced application level information that includes the content of the request.\nQ: When should I use the Classic Load Balancer and when should I use the Application Load Balancer"
+                },
+                {
+                        "question": "\nQ: Why am I limited to 5 Elastic IP addresses per region"
+                },
+                {
+                        "answer": "\nPublic (IPV4) internet addresses are a scarce resource. There is only a limited amount of public IP space available, and Amazon EC2 is committed to helping use that space efficiently.\nBy default, all accounts are limited to 5 Elastic IP addresses per region. If you need more than 5 Elastic IP addresses, we ask that you apply for your limit to be raised. We will ask you to think through your use case and help us understand your need for additional addresses. You can apply for more Elastic IP addresses here. Any increases will be specific to the region they have been requested for.\nQ: Why am I charged when my Elastic IP address is not associated with a running instance"
+                },
+                {
+                        "question": "\nQ: How do I prevent other people from viewing my systems"
+                },
+                {
+                        "answer": "\nYou have complete control over the visibility of your systems. The Amazon EC2 security systems allow you to place your running instances into arbitrary groups of your choice. Using the web services interface, you can then specify which groups may communicate with which other groups, and also which IP subnets on the Internet may talk to which groups. This allows you to control access to your instances in our highly dynamic environment. Of course, you should also secure your instance as you would any other server.\nQ: Can I get a history of all EC2 API calls made on my account for security analysis and operational troubleshooting purposes"
+                },
+                {
+                        "question": "\nQ: What is the minimum time interval granularity for the data that Amazon CloudWatch receives and aggregates"
+                },
+                {
+                        "answer": "\nMetrics are received and aggregated at 1 minute intervals.\nQ: Which operating systems does Amazon CloudWatch support"
+                },
+                {
+                        "question": "\nQ: Can I automatically scale Amazon EC2 Auto Scaling Groups"
+                },
+                {
+                        "answer": "\nYes. Amazon EC2 Auto Scaling is a fully managed service designed to launch or terminate Amazon EC2 instances automatically to help ensure you have the correct number of Amazon EC2 instances available to handle the load for your application. EC2 Auto Scaling helps you maintain application availability through fleet management for EC2 instances, which detects and replaces unhealthy instances, and by scaling your Amazon EC2 capacity up or down automatically according to conditions you define. You can use EC2 Auto Scaling to automatically increase the number of Amazon EC2 instances during demand spikes to maintain performance and decrease capacity during lulls to reduce costs.\nAllocation strategies in EC2 Auto Scaling determine how Spot Instances in your fleet are fulfilled from Spot Instance pools. The capacity-optimized allocation strategy attempts to provision Spot Instances from the most available Spot Instance pools by analyzing capacity metrics. This strategy is a good choice for workloads that have a higher cost of interruption such as big data and analytics, image and media rendering, machine learning, and high performance computing. The lowest-price allocation strategy launches Spot Instances strictly based on diversification across ‘N’ lowest priced pools. \nFor more information see the Amazon EC2 Auto Scaling FAQ. \n"
+                },
+                {
+                        "question": "\nQ: Why should I hibernate an instance"
+                },
+                {
+                        "answer": "\nYou can hibernate an instance to get your instance and applications up and running quickly, if they take a long time to bootstrap (e.g. load memory caches). You can start instances, bring them to a desired state and hibernate them. These “pre-warmed” instances can then be resumed to reduce the time it takes for an instance to return to service. Hibernation retains memory state across Stop/Start cycles.\nQ: What happens when I hibernate my instance"
+                },
+                {
+                        "question": "\nQ: What is VM Import/Export"
+                },
+                {
+                        "answer": "\nVM Import/Export enables customers to import Virtual Machine (VM) images in order to create Amazon EC2 instances. Customers can also export previously imported EC2 instances to create VMs. Customers can use VM Import/Export to leverage their previous investments in building VMs by migrating their VMs to Amazon EC2.\n"
+                },
+                {
+                        "question": "\nQ: What operating systems are supported"
+                },
+                {
+                        "answer": "\nVM Import/Export currently supports Windows and Linux VMs, including Windows Server 2003, Windows Server 2003 R2, Windows Server 2008, Windows Server 2012 R1, Red Hat Enterprise Linux (RHEL) 5.1-6.5 (using Cloud Access), Centos 5.1-6.5, Ubuntu 12.04, 12.10, 13.04, 13.10, and Debian 6.0.0-6.0.8, 7.0.0-7.2.0. For more details on VM Import, including supported file formats, architectures, and operating system configurations, please see the VM Import/Export section of the Amazon EC2 User Guide.\nQ: What virtual machine file formats are supported"
+                },
+                {
+                        "question": "\nQ: How will I be charged and billed for my use of Amazon EC2"
+                },
+                {
+                        "answer": "\nYou pay only for what you use. Displayed pricing is an hourly rate but depending on which instances you choose, you pay by the hour or second (minimum of 60 seconds) for each instance type. Partial instance-hours consumed are billed based on instance usage. Data transferred between AWS services in different regions is charged at standard inter-region data transfer rates. Usage for other Amazon Web Services is billed separately from Amazon EC2.\nFor EC2 pricing information, please visit the pricing section on the EC2 detail page.\nQ: When does billing of my Amazon EC2 systems begin and end"
+                },
+                {
+                        "question": "\nQ: What is a Convertible RI"
+                },
+                {
+                        "answer": "\nA Convertible RI is a type of Reserved Instance with attributes that can be changed during the term.\nQ: When should I purchase a Convertible RI instead of a Standard RI"
+                },
+                {
+                        "question": "\nQ: What is Amazon EC2 Fleet"
+                },
+                {
+                        "answer": "\nWith a single API call, EC2 Fleet lets you provision compute capacity across different instance types, Availability Zones and across On-Demand, Reserved Instances (RI) and Spot Instances purchase models to help optimize scale, performance and cost.\nQ: If I currently use Amazon EC2 Spot Fleet should I migrate to Amazon EC2 Fleet"
+                },
+                {
+                        "question": "\nOn-Demand Capacity Reservation is an EC2 offering that lets you create and manage reserved capacity on Amazon EC2. You can create a Capacity Reservation by choosing an Availability Zone and quantity (number of instances) along with other instance specifications such as instance type and tenancy. Once created, the EC2 capacity is held for you regardless of whether you run the instances or not.\nQ: How much do Capacity Reservations cost"
+                },
+                {
+                        "answer": "\nWhen the Capacity Reservation is active, you will pay equivalent instance charges whether you run the instances or not. If you do not use the reservation, the charge will show up as unused reservation on your EC2 bill. When you run an instance that matches the attributes of a reservation, you just pay for the instance and nothing for the reservation. There are no upfront or additional charges.\nFor example, if you create a Capacity Reservation for 20 c5.2xlarge instances and you run 15 c5.2xlarge instances, you will be charged for 15 instances and 5 unused instances in the reservation (effectively charged for 20 instances).\nQ: Can I get a discount for Capacity Reservation usage"
+                },
+                {
+                        "question": "\nQ: What is a Reserved Instance"
+                },
+                {
+                        "answer": "\nA Reserved Instance (RI) is an EC2 offering that provides you with a significant discount on EC2 usage when you commit to a one-year or three-year term.\nQ: What are the differences between Standard RIs and Convertible RIs"
+                },
+                {
+                        "question": "\nQ: Can I change my RI during its term"
+                },
+                {
+                        "answer": "\nYes, you can modify the Availability Zone of the RI, change the scope of the RI from Availability Zone to region (and vice-versa), change the network platform from EC2-VPC to EC2-Classic (and vice versa) or modify instance sizes within the same instance family (on the Linux/Unix platform).\nQ: Can I change the instance type of my RI during its term"
+                },
+                {
+                        "question": "\nQ: Can you help me understand how volume discounts are applied to my RI purchases"
+                },
+                {
+                        "answer": "\nSure. Let's assume that you currently have $400,000 worth of active RIs in the US-east-1 region. Now, if you purchase RIs worth $150,000 in the same region, then the first $100,000 of this purchase would not receive a discount. However, the remaining $50,000 of this purchase would be discounted by 5 percent, so you would only be charged $47,500 for this portion of the purchase over the term based on your payment option.\nTo learn more, please visit the Understanding Reserved Instance Discount Pricing Tier portion of the Amazon EC2 User Guide.\nQ: How do I calculate the list value of an RI"
+                },
+                {
+                        "question": "\nQ: How are volume discounts calculated if I use Consolidated Billing"
+                },
+                {
+                        "answer": "\nIf you leverage Consolidated Billing, AWS will use the aggregate total list price of active RIs across all of your consolidated accounts to determine which volume discount tier to apply. Volume discount tiers are determined at the time of purchase, so you should activate Consolidated Billing prior to purchasing RIs to ensure that you benefit from the largest possible volume discount that your consolidated accounts are eligible to receive.\nQ: Do Convertible RIs qualify for Volume Discounts"
+                },
+                {
+                        "question": "\nQ: What is the Reserved Instance Marketplace"
+                },
+                {
+                        "answer": "\nThe Reserved Instance Marketplace is an online marketplace that provides AWS customers the flexibility to sell their Amazon Elastic Compute Cloud (Amazon EC2) Reserved Instances to other businesses and organizations. Customers can also browse the Reserved Instance Marketplace to find an even wider selection of Reserved Instance term lengths and pricing options sold by other AWS customers.\nQ: When can I list a Reserved Instance on the Reserved Instance Marketplace"
+                },
+                {
+                        "question": "\nQ: What is Savings Plans"
+                },
+                {
+                        "answer": "\nSavings Plans is a flexible pricing model that offers low prices on EC2, Lambda and Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term. When you sign up for Savings Plans, you will be charged the discounted Savings Plans price for your usage up to your commitment. For example, if you commit to $10 of compute usage an hour, you will get the Savings Plans prices on that usage up to $10 and any usage beyond the commitment will be charged On Demand rates.\nQ: What types of Savings Plans does AWS offer"
+                },
+                {
+                        "question": "\nQ. What is a Spot Instance"
+                },
+                {
+                        "answer": "\nSpot Instances are spare EC2 capacity that can save you up to 90% off of On-Demand prices that AWS can interrupt with a 2-minute notification. Spot uses the same underlying EC2 instances as On-Demand and Reserved Instances, and is best suited for fault-tolerant, flexible workloads. Spot Instances provides an additional option for obtaining compute capacity and can be used along with On-Demand and Reserved Instances.\nQ. How is a Spot Instance different than an On-Demand instance or Reserved Instance"
+                },
+                {
+                        "question": "\nQ. How do I use this service"
+                },
+                {
+                        "answer": "\nThe service provides an NTP endpoint at a link-local IP address (169.254.169.123) accessible from any instance running in a VPC. Instructions for configuring NTP clients are available for Linux and Windows.\nQ. What are the key benefits of using this service"
+                },
+                {
+                        "question": "\nQ: How isolated are Availability Zones from one another"
+                },
+                {
+                        "answer": "\nEach Availability Zone runs on its own physically distinct, independent infrastructure, and is engineered to be highly reliable. Common points of failures like generators and cooling equipment are not shared across Availability Zones. Additionally, they are physically separate, such that even extremely uncommon disasters such as fires, tornados or flooding would only affect a single Availability Zone.\nQ: Is Amazon EC2 running in more than one region"
+                },
+                {
+                        "question": "\nQ. What is a Cluster Compute Instance"
+                },
+                {
+                        "answer": "\nCluster Compute Instances combine high compute resources with high performance networking for High Performance Compute (HPC) applications and other demanding network-bound applications. Cluster Compute Instances provide similar functionality to other Amazon EC2 instances but have been specifically engineered to provide high performance networking.\nAmazon EC2 cluster placement group functionality allows users to group Cluster Compute Instances in clusters – allowing applications to get the low-latency network performance necessary for tightly-coupled node-to-node communication typical of many HPC applications. Cluster Compute Instances also provide significantly increased network throughput both within the Amazon EC2 environment and to the Internet. As a result, these instances are also well suited for customer applications that need to perform network-intensive operations.\nLearn more about using this instance type for HPC applications.\nQ. What kind of network performance can I expect when I launch instances in a cluster placement group"
+                },
+                {
+                        "question": "\nQ: What CPU options are available on EC2 instances"
+                },
+                {
+                        "answer": "\nEC2 instances offer a variety of CPU options to help customers balance performance and cost requirements.  Depending on the instance type, EC2 offers a choice in CPU including AWS Graviton/Graviton2 processors (Arm), AMD processors (x86), and Intel processors (x86). \nQ: What kind of hardware will my application stack run on"
+                },
+                {
+                        "question": "\nQ. How much compute power do Micro instances provide"
+                },
+                {
+                        "answer": "\nMicro instances provide a small amount of consistent CPU resources and allow you to burst CPU capacity up to 2 ECUs when additional cycles are available. They are well suited for lower throughput applications and web sites that consume significant compute cycles periodically but very little CPU at other times for background processes, daemons, etc. Learn more about using this instance type.\nQ. How does a Micro instance compare in compute power to a Standard Small instance"
+                },
+                {
+                        "question": "\nQ. What is the Nitro Hypervisor"
+                },
+                {
+                        "answer": "\nThe launch of C5 instances introduced a new hypervisor for Amazon EC2, the Nitro Hypervisor. As a component of the Nitro system, the Nitro Hypervisor primarily provides CPU and memory isolation for EC2 instances. VPC networking and EBS storage resources are implemented by dedicated hardware components, Nitro Cards that are part of all current generation EC2 instance families. The Nitro Hypervisor is built on core Linux Kernel-based Virtual Machine (KVM) technology, but does not include general-purpose operating system components.\nQ. How does the Nitro Hypervisor benefit customers"
+                },
+                {
+                        "question": "\nQ: What is Optimize CPUs"
+                },
+                {
+                        "answer": "\nOptimize CPUs gives you greater control of your EC2 instances on two fronts. First, you can specify a custom number of vCPUs when launching new instances to save on vCPU-based licensing costs. Second, you can disable Intel Hyper-Threading Technology (Intel HT Technology) for workloads that perform well with single-threaded CPUs, such as certain high-performance computing (HPC) applications.\nQ: Why should I use Optimize CPUs feature"
+                },
+                {
+                        "question": "\nQ. How am I billed for my use of Amazon EC2 running IBM"
+                },
+                {
+                        "answer": "\nYou pay only for what you use and there is no minimum fee. Pricing is per instance-hour consumed for each instance type. Partial instance-hours consumed are billed as full hours. Data transfer for Amazon EC2 running IBM is billed and tiered separately from Amazon EC2. There is no Data Transfer charge between two Amazon Web Services within the same region (i.e. between Amazon EC2 US West and another AWS service in the US West). Data transferred between AWS services in different regions will be charged as Internet Data Transfer on both sides of the transfer.\nFor Amazon EC2 running IBM pricing information, please visit the pricing section on the Amazon EC2 running IBM detail page.\nQ. Can I use Amazon DevPay with Amazon EC2 running IBM"
+                },
+                {
+                        "question": "\nQ. Can I use my existing Windows Server license with EC2"
+                },
+                {
+                        "answer": "\nYes you can. After you’ve imported your own Windows Server machine images using the ImportImage tool, you can launch instances from these machine images on EC2 Dedicated Hosts and effectively manage instances and report usage. Microsoft typically requires that you track usage of your licenses against physical resources such as sockets and cores and Dedicated Hosts helps you to do this. Visit the Dedicated Hosts detail page for more information on how to use your own Windows Server licenses on Amazon EC2 Dedicated Hosts.\nQ. What software licenses can I bring to the Windows environment"
+                },
+                {
+                        "question": "\nQ: What are Amazon EC2 Mac instances"
+                },
+                {
+                        "answer": "\nAmazon EC2 Mac instances allow customers to run on-demand macOS workloads in the cloud for the first time, extending the flexibility, scalability, and cost benefits of AWS to all Apple developers. With EC2 Mac instances, developers creating apps for iPhone, iPad, Mac, Apple Watch, Apple TV, and Safari can provision and access macOS environments within minutes, dynamically scale capacity as needed, and benefit from AWS’s pay-as-you-go pricing.\nQ: What workloads should you run on EC2 Mac instances"
+                },
+                {
+                        "question": "\nQ: What pricing models are available for EC2 Mac instances"
+                },
+                {
+                        "answer": "\nAmazon EC2 Mac instances are available as Dedicated Hosts through both On-Demand and Savings Plans pricing models. The Dedicated Host is the unit of billing for EC2 Mac instances. Billing is per second, with a 24-hour minimum allocation period for the Dedicated Host to comply with the Apple macOS Software License Agreement. At the end of the 24-hour minimum allocation period, the host can be released at any time with no further commitment. Both Compute and Instance Savings Plans are available for EC2 Mac instances and offer up to 44 percent off On-Demand pricing. Visit the Dedicated Host pricing page for more information. (Note: Please select “Dedicated Host” tenancy and “Linux” operating system to view details.) You can also access EC2 Mac instances pricing on the AWS Pricing Calculator for Dedicated Hosts. \nQ: How do you release a Dedicated Host"
+                },
+                {
+                        "question": "\nQ: Can you update the EFI NVRAM variables on an EC2 Mac instance"
+                },
+                {
+                        "answer": "\nYes, you can update certain EFI NVRAM variables on an EC2 Mac instance that will persist across reboots. However, EFI NVRAM variables will be reset if the instance is stopped or terminated. Please see the EC2 Mac instances documentation for more information.\nQ: Can you use FileVault to encrypt the Amazon Elastic Block Store (Amazon EBS) boot volume on EC2 Mac instances"
+                },
+                {
+                        "question": "\nQ: What macOS-based Amazon Machine Images (AMIs) are available for EC2 Mac instances"
+                },
+                {
+                        "answer": "\nEC2 Mac instances use physical Mac mini hardware to run macOS. Apple hardware only supports the macOS version shipped with the hardware (or later). x86-based EC2 Mac instances use the 2018 Intel Core i7 Mac mini, which means macOS Mojave (10.14.x) is as 'far back' as you can go, since the 2018 Mac mini shipped with Mojave. EC2 M1 Mac instances use 2020 M1 Mac mini, which shipped with macOS Big Sur (11.x). To see which latest versions of macOS are available as EC2 Mac AMIs, please visit the documentation.\nQ: How can you run older versions of macOS on EC2 Mac instances"
+                },
+                {
+                        "question": "\nQ: How do you connect to an EC2 Mac instance over SSH"
+                },
+                {
+                        "answer": "\nAfter launching your instance and receiving an instance id, you can use the following command to poll the instance and determine when it is ready for SSH access. Connecting over SSH to EC2 Mac instances follows the same process as connecting to other EC2 instances, such as those running Linux or Windows. To support connecting to your instance using SSH, launch the instance using a key pair and a security group that allows SSH access. Provide the .pem file for the key pair when you connect to the instance. For more information, please see the documentation. \nQ: How do you connect to an EC2 Mac instance over VNC"
+                },
+                {
+                        "question": "\nQ: How many Amazon Elastic Block Store (Amazon EBS) volumes and Elastic Network Interfaces (ENIs) are supported by EC2 Mac instances"
+                },
+                {
+                        "answer": "\nx86-based EC2 Mac instances support 16 EBS volumes and 8 ENI attachments, and EC2 M1 Mac instances support up to 10 EBS volumes and 8 ENI attachments.\nQ: Do EC2 Mac instances support EBS"
+                },
+                {
+                        "question": "\nQ. What is Nitro System Support for Older Generation instances"
+                },
+                {
+                        "answer": "\nThe AWS Nitro System now will provide its modern hardware and software components for previous generation EC2 instances to extend the length of service beyond the typical lifetime of the underlying hardware. With the Nitro System support customers can continue running their workloads and applications on the instance families they were built on. \nQ. Which previous generation instances will receive Nitro System support and within what time frame"
                 }
         ]
 ]

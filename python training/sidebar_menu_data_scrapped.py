@@ -31,7 +31,7 @@ def json_from_html_using_bs4(base_url):
         dataNew.append(question.getText())
         # i = question.getText()
         # print(type(i))
-        data = {'subsection': question.getText()}
+        # data = {'subsection': question.getText()}
         # print (data) 
         
         # for data in questions:
@@ -39,13 +39,16 @@ def json_from_html_using_bs4(base_url):
     # print(dataNew)   
     
     for newData in dataNew:
-        type = newData.split("\n")
-        x = type[0]
-        y= type[1]
-        print(y)
-        dataObj={"question":type[1]}
+        splitData = newData.split("?")
+        x = splitData[0]
+        y= splitData[1]
+        # z=splitData[2]
+        # print(x,y,z)
+        dataObj={"question":splitData[0]}
+        dataObj1={"answer":splitData[1]}
         dataNewQuestion.append(dataObj)
-    faqs.append(data)
+        dataNewQuestion.append(dataObj1)
+    # res.append(faqs)
     res.append(dataNewQuestion)
 
     
